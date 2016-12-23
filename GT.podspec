@@ -3,13 +3,9 @@ Pod::Spec.new do |s|
   s.version      = "2.3.3"
   s.summary      = "A short description of GT."
   s.description  = "GT"
-
-  s.homepage     = "http://EXAMPLE/TTNVendor"
-
+  s.homepage     = "http://gt.tencent.com/"
   s.license      = "MIT"
-
-  s.author             = { "njafei" => "njafei@163.com" }
-
+  s.author       = { "njafei" => "njafei@163.com" }
   s.platform     = :ios, "7.0"
 
   #  When using multiple platforms
@@ -22,8 +18,8 @@ Pod::Spec.new do |s|
 
     # GT
     s.subspec 'GT' do |gt|
-        gt.vendored_frameworks = 'GT.framework'
-        gt.resources = 'Resources/GT.bundle'
+        gt.vendored_frameworks = 'GT.embeddedframework/GT.framework'
+        gt.resources = 'GT.embeddedframework/Resources/GT.bundle'
     end
 
 
