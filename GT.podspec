@@ -22,8 +22,8 @@ Pod::Spec.new do |s|
 
     # GT
     s.subspec 'GT' do |gt|
-        gt.vendored_frameworks = 'GT/*.framework'
-        gt.resources = 'GT/Resources/*.bundle'
+        gt.vendored_frameworks = 'GT.framework'
+        gt.resources = 'Resources/GT.bundle'
     end
 
 
