@@ -2,11 +2,13 @@ Pod::Spec.new do |s|
   s.name         = "GT"
   s.version      = "2.3.3"
   s.summary      = "A short description of GT."
-  s.description  = "GT"
+  s.description  = "GT framework ,since GT don't provider a pod , I build this"
   s.homepage     = "http://gt.tencent.com/"
   s.license      = "MIT"
   s.author       = { "njafei" => "njafei@163.com" }
   s.platform     = :ios, "7.0"
+  s.frameworks = 'SystemConfiguration', 'AudioToolbox', 'CoreTelephony'
+  s.libraries = 'sqlite3', 'z'
 
   #  When using multiple platforms
   s.ios.deployment_target = "7.0"
